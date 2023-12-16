@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+} 
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.transition {
+    transition: transform 0.5s;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.text-color-white {
+    color: white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+.h-400px {
+    height : 400px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.h-50 {
+    height : 50%;
+}
+
+.w-300px {
+    width: 300px;
+} 
+
+.h-200px {
+    height: 200px;
+} 
+
+.w-400px {
+    width: 400px;
+}
+
+.h-300px {
+    height: 300px;
+}
+
+.m-10px {
+    margin: 10px;
+}
+
+.p-10px {
+    padding: 10px;
+}
+
+.ms-50px {
+    margin-left: 50px;
+}
+
+#buttons-radio {
+    bottom: 70px;
+}
+
+.button-radio {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.button-radio.active {
+    background-color: white;
+}

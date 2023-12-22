@@ -84,3 +84,18 @@ removeIt.addEventListener("click", (event)=> {
         alert("Tu cherches à supprimer quoi?")
     }  
 })
+
+
+
+
+const burger = document.getElementById("burger");
+let menu_burger = document.getElementById("menu_burger");
+const quit = document.getElementById("quit");
+
+burger.addEventListener("click", (event)=> {
+    menu_burger.style.top = "100px";
+})
+
+quit.addEventListener("click", (event)=> {
+    menu_burger.style.top = "-300vh";
+})

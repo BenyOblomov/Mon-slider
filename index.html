@@ -9,47 +9,65 @@
 </head>
 <body>
     <header>
+        <!-- La navbar desktop (disparait sur les formats mobiles) -->
         <nav class="d-flex justify-content-between">
+            <!-- le logo du site -->
             <div class="logo"><i class="fa-solid fa-hippo"></i></div>
-            <ul class="d-flex justify-content-around list-style-none w-400px">
-                <li><a class="text-decoration-none"  href="#">Tomate</a></li>
-                <li><a class="text-decoration-none"  href="#">Fromage</a></li>
-                <li><a class="text-decoration-none"  href="#">Steak</a></li>
-                <li><a class="text-decoration-none"  href="#">Salade</a></li>
+            <!-- le menu composé des differentes pages du site -->
+            <ul class="d-flex justify-content-around list-style-none w-500px">
+                <li class="bg-red w-100 text-color-black"><a class="text-decoration-none text-color-black" href="#">Tomate</a></li>
+                <li class="bg-yellow w-100"><a class="text-decoration-none text-color-black" href="#">Fromage</a></li>
+                <li class="bg-brown w-100"><a class="text-decoration-none text-color-black" href="#">Steak</a></li>
+                <li class="bg-green w-100"><a class="text-decoration-none text-color-black" href="#">Salade</a></li>
             </ul>
+            <!-- le logo de type recherche -->
             <i class="fa-solid fa-magnifying-glass"></i>
         </nav>
+        <!-- la navbar pour les mobiles -->
         <div id="navmob" class="d-none justify-content-between">
+            <!-- le logo du site -->
             <i class="fa-solid fa-hippo"></i>
+            <!-- le logo de type recherche -->
             <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- le bouton burger pour faire apparaitre le menu -->
             <button id="burger"><i class="fa-solid fa-bars"></i></button>
         </div>
+        <!-- le menu burger (qui apparait apres un click sur le bouton burger) -->
         <div id="menu_burger" class="bg-orange position-absolute d-flex flex-direction-column align-items-center transition2">
+            <!-- l'icone X qui nous permettra de quitter le menu -->
             <i id="quit" class="fa-solid fa-xmark"></i>
+            <!-- le menu composé des differentes pages du site -->
             <ul class="d-flex justify-content-center align-items-center flex-direction-column list-style-none h-100 w-100">
-                <li class="bg-red w-100 h-16 text-center"><a class="text-decoration-none bg-red h-100 w-100" href="#">Tomate</a></li>
-                <li class="bg-yellow w-100 h-16 text-center"><a class="text-decoration-none bg-yellow h-100 w-100" href="#">Fromage</a></li>
-                <li class="bg-brown w-100 h-16 text-center"><a class="text-decoration-none bg-brown h-100 w-100" href="#">Steak</a></li>
-                <li class="bg-green w-100 h-16 text-center"><a class="text-decoration-none bg-green h-100 w-100" href="#">Salade</a></li>
+                <li class="bg-red w-100 h-16 text-center"><a class="text-decoration-none bg-red h-100 w-100 text-color-black" href="#">Tomate</a></li>
+                <li class="bg-yellow w-100 h-16 text-center"><a class="text-decoration-none bg-yellow h-100 w-100 text-color-black" href="#">Fromage</a></li>
+                <li class="bg-brown w-100 h-16 text-center"><a class="text-decoration-none bg-brown h-100 w-100 text-color-black" href="#">Steak</a></li>
+                <li class="bg-green w-100 h-16 text-center"><a class="text-decoration-none bg-green h-100 w-100 text-color-black" href="#">Salade</a></li>
             </ul>
         </div>     
     </header>
     <main>
+        <!-- Le slider -->
         <div class="d-flex justify-content-center align-items-center w-100 h-400px position-relative">
+            <!-- bouton "précédent" -->
             <button id="prev" class="m-10px p-10px z-index-1">Prev</button>
-            <div class="w-400px h-300px bg-black overflow-hidden">
+            <!-- la fenetre dans laquelle vont defiler les images -->
+            <div class="w-350px h-300px bg-black overflow-hidden">
                 <div id="slider" class="d-flex align-items-center w-100 h-100 transition1">
                 </div>
             </div>
+            <!-- le bouton "suivant" -->
             <button id="next" class="m-10px p-10px z-index-1">Next</button>
-            <div id="buttons-radio" class="position-absolute d-flex">
+            <!-- l'espace réservé aux boutons ronds -->
+            <div id="buttons-radio" class="position-absolute d-flex bottom-70px">
             </div>
         </div>
+        <!-- Les boutons pour ajouter une imagr ou retirer la derniere image ajoutée -->
         <div class="w-100 d-flex justify-content-center">
             <button id="addImage" class="m-10px p-10px">Add image</button>
             <button id="removeIt" class="m-10px p-10px">Remove it</button>
         </div>
     </main>
+    <!-- Le lien vers le script js -->
     <script src="script.js"></script>
 </body>
 </html>

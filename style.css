@@ -9,6 +9,9 @@ body {
     width: 100vw;
 }
 
+/* Ma bibliotheque */
+/* Position, display, flex etc... */
+
 .text-center {
     text-align: center;
 }
@@ -25,12 +28,12 @@ body {
     top: -300vh;
 }
 
-.left-25 {
-    left: 25vw;
+.bottom-70px {
+    bottom: 70px;
 }
 
-.m-auto {
-    margin: auto;
+.left-25 {
+    left: 25vw;
 }
 
 .d-flex {
@@ -89,6 +92,8 @@ body {
     list-style: none;
 }
 
+/* Les couleurs */
+
 .bg-black {
     background-color: black;
 }
@@ -113,20 +118,32 @@ body {
     background-color: orange;
 }
 
-.text-color-white {
-    color: white;
+.text-color-black {
+    color: black;
 }
+
+/* Les sizing */
 
 .h-16 {
     height: 16%;
 }
-.w-100 {
-    width: 100%;
+
+.h-50 {
+    height : 50%;
 }
 
 .h-100 {
     height: 100%;
 }
+
+.h-200px {
+    height: 200px;
+}
+
+.h-300px {
+    height: 300px;
+}
+
 .h-400px {
     height : 400px;
 }
@@ -135,28 +152,26 @@ body {
     width: 50%;
 }
 
-.h-50 {
-    height : 50%;
-}
-
-.h-100 {
-    height : 100%;
+.w-100 {
+    width: 100%;
 }
 
 .w-300px {
     width: 300px;
 } 
 
-.h-200px {
-    height: 200px;
-} 
-
-.w-400px {
-    width: 400px;
+.w-350px {
+    width: 350px;
 }
 
-.h-300px {
-    height: 300px;
+.w-500px {
+    width: 500px;
+}
+
+/* Padding et marges */
+
+.m-auto {
+    margin: auto;
 }
 
 .m-10px {
@@ -167,13 +182,11 @@ body {
     padding: 10px;
 }
 
-.ms-50px {
-    margin-left: 50px;
+.ms-25px {
+    margin-left: 25px;
 }
 
-#buttons-radio {
-    bottom: 70px;
-}
+/* Les boutons ronds du slider */
 
 .button-radio {
     width: 15px;
@@ -188,6 +201,8 @@ body {
     background-color: white;
 }
 
+/* Le menu burger en forme de burger */
+
 #menu_burger {
     height: 350px;
     width: 90vw;
@@ -199,11 +214,16 @@ body {
     z-index: 2;
 }
 
-.fa-solid {
+/* La taille des icones */
+
+.fa-solid, li a {
     font-size: 2em;
 }
 
+/* Le responsive */
+
 @media screen and (max-width: 600px) {
+
     nav {
         display: none!important;
     }
@@ -212,5 +232,15 @@ body {
         display: flex;
     }
 
+    #prev, #next {
+        position: absolute;
+    }
 
+    #prev {
+        left: 1vw;
+    }
+
+    #next {
+        right: 1vw;
+    }
 }

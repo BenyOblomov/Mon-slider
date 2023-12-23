@@ -7,49 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<header>
-    <nav class="d-flex justify-content-between">
-        <div class="logo"><i class="fa-solid fa-hippo"></i></div>
-        <ul class="d-flex justify-content-around list-style-none w-400px">
-            <li><a class="text-decoration-none"  href="#">Tomate</a></li>
-            <li><a class="text-decoration-none"  href="#">Fromage</a></li>
-            <li><a class="text-decoration-none"  href="#">Steak</a></li>
-            <li><a class="text-decoration-none"  href="#">Salade</a></li>
-        </ul>
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </nav>
-    <div id="navmob" class="d-none justify-content-between">
-        <i class="fa-solid fa-hippo"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <button id="burger"><i class="fa-solid fa-bars"></i></button>
-    </div>
-    <div id="menu_burger" class="bg-orange position-absolute d-flex flex-direction-column align-items-center transition2">
-        <i id="quit" class="fa-solid fa-xmark"></i>
-        <ul class="d-flex justify-content-center align-items-center flex-direction-column list-style-none h-100 w-100">
-            <li class="bg-red w-100 h-16 text-center"><a class="text-decoration-none bg-red h-100 w-100" href="#">Tomate</a></li>
-            <li class="bg-yellow w-100 h-16 text-center"><a class="text-decoration-none bg-yellow h-100 w-100" href="#">Fromage</a></li>
-            <li class="bg-brown w-100 h-16 text-center"><a class="text-decoration-none bg-brown h-100 w-100" href="#">Steak</a></li>
-            <li class="bg-green w-100 h-16 text-center"><a class="text-decoration-none bg-green h-100 w-100" href="#">Salade</a></li>
-        </ul>
-    </div>     
-</header>
 <body>
-    <div class="d-flex justify-content-center align-items-center w-100 h-400px position-relative">
-        <button id="prev" class="m-10px p-10px z-index-1">Prev</button>
-        <div class="w-400px h-300px bg-black overflow-hidden">
-            <div id="slider" class="d-flex align-items-center w-100 h-100 transition1">
+    <header>
+        <nav class="d-flex justify-content-between">
+            <div class="logo"><i class="fa-solid fa-hippo"></i></div>
+            <ul class="d-flex justify-content-around list-style-none w-400px">
+                <li><a class="text-decoration-none"  href="#">Tomate</a></li>
+                <li><a class="text-decoration-none"  href="#">Fromage</a></li>
+                <li><a class="text-decoration-none"  href="#">Steak</a></li>
+                <li><a class="text-decoration-none"  href="#">Salade</a></li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </nav>
+        <div id="navmob" class="d-none justify-content-between">
+            <i class="fa-solid fa-hippo"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button id="burger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="menu_burger" class="bg-orange position-absolute d-flex flex-direction-column align-items-center transition2">
+            <i id="quit" class="fa-solid fa-xmark"></i>
+            <ul class="d-flex justify-content-center align-items-center flex-direction-column list-style-none h-100 w-100">
+                <li class="bg-red w-100 h-16 text-center"><a class="text-decoration-none bg-red h-100 w-100" href="#">Tomate</a></li>
+                <li class="bg-yellow w-100 h-16 text-center"><a class="text-decoration-none bg-yellow h-100 w-100" href="#">Fromage</a></li>
+                <li class="bg-brown w-100 h-16 text-center"><a class="text-decoration-none bg-brown h-100 w-100" href="#">Steak</a></li>
+                <li class="bg-green w-100 h-16 text-center"><a class="text-decoration-none bg-green h-100 w-100" href="#">Salade</a></li>
+            </ul>
+        </div>     
+    </header>
+    <main>
+        <div class="d-flex justify-content-center align-items-center w-100 h-400px position-relative">
+            <button id="prev" class="m-10px p-10px z-index-1">Prev</button>
+            <div class="w-400px h-300px bg-black overflow-hidden">
+                <div id="slider" class="d-flex align-items-center w-100 h-100 transition1">
+                </div>
+            </div>
+            <button id="next" class="m-10px p-10px z-index-1">Next</button>
+            <div id="buttons-radio" class="position-absolute d-flex">
             </div>
         </div>
-        <button id="next" class="m-10px p-10px z-index-1">Next</button>
-        <div id="buttons-radio" class="position-absolute d-flex">
+        <div class="w-100 d-flex justify-content-center">
+            <button id="addImage" class="m-10px p-10px">Add image</button>
+            <button id="removeIt" class="m-10px p-10px">Remove it</button>
         </div>
-    </div>
-    <div class="w-100 d-flex justify-content-center">
-        <button id="addImage" class="m-10px p-10px">Add image</button>
-        <button id="removeIt" class="m-10px p-10px">Remove it</button>
-    </div>
-
-    
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

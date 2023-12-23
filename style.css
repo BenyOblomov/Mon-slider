@@ -94,6 +94,14 @@ body {
 
 /* Les couleurs */
 
+.bg-rosyb {
+    background-color: rosybrown;
+}
+
+.bg-tan {
+    background-color: tan;
+}
+
 .bg-black {
     background-color: black;
 }
@@ -222,7 +230,7 @@ body {
 
 /* Le responsive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     nav {
         display: none!important;
